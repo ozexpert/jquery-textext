@@ -712,7 +712,8 @@
 		$.extend(true, itemManager, self.opts(OPT_EXT + '.item.manager'));
 		$.extend(true, self, self.opts(OPT_EXT + '.*'), self.opts(OPT_EXT + '.core'));
 		
-		self.originalWidth = input.outerWidth();
+		//self.originalWidth = input.outerWidth();
+		self.originalWidth = '100%'; //easier just wrap with other element to change width
 
 		self.invalidateBounds();
 
